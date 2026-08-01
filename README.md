@@ -1,2 +1,2 @@
 # CredCheck
-A credential Verifier for the uploaded media.
+A Credential Verifier for the uploaded media.
