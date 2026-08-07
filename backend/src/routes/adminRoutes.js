@@ -12,7 +12,7 @@ import { requireRole } from '../middleware/roleMiddleware.js';
 
 const router = express.Router();
 
-router.use(protect, requireRole('admin')); // every route below this line requires admin
+router.use(protect, requireRole('admin'));
 
 router.get('/users', getAllUsers);
 router.patch('/users/:id/remove', removeUser);

@@ -10,7 +10,6 @@ import { requireRole } from '../middleware/roleMiddleware.js';
 
 const router = express.Router();
 
-// Public — anyone can apply for their org to become a verifier, no login required
 router.post('/apply', applyAsVerifier);
 
 router.get('/requests', protect, requireRole('verifier'), getPendingCertificates);
